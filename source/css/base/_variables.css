@@ -1,0 +1,12 @@
+:root {
+  --container--base: 32rem;
+
+  --space--base: 1rem;
+  --space--large: 2rem;
+  --space--medium: 1.5rem;
+  --space--small: 0.75rem;
+  --space--x-large: 3rem;
+  --space--x-small: 0.5rem;
+  --space--xx-large: 4rem;
+  --space--xx-small: 0.25rem;
+}

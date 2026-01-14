@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -xeuo pipefail
+
+if command -v direnv > /dev/null && test -f .envrc; then
+  direnv allow
+fi

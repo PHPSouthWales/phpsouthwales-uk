@@ -13,7 +13,7 @@
       devShells.${system}.default = pkgs.mkShell {
         packages = with pkgs; [
           nixd
-
+          nodePackages.browser-sync
           php
           phpPackages.composer
 

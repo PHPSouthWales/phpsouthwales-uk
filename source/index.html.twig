@@ -1,4 +1,13 @@
 ---
 layout: base
 title: PHP South Wales
+use: [speakers]
 ---
+
+<h2>Speakers</h2>
+
+<ul>
+  {% for speaker in data.speakers %}
+    <li><a href="{{ speaker.url|trim('/', 'right') }}">{{ speaker.name }}</a></li>
+  {% endfor %}
+</ul>

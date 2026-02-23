@@ -3,7 +3,7 @@ local_backend:
   allowed_hosts:
     - localhost
     - phpsouthwales.localhost
-  # url: http://localhost:8083/api/v1
+  url: http://localhost:8083/api/v1
 
 backend:
   name: git-gateway
@@ -27,3 +27,45 @@ collections:
     fields:
       - { name: name, label: Name, widget: string }
       - { name: body, widget: markdown, required: false }
+
+  - name: events
+    label: Events
+    label_singular: Events
+    create: true
+    format: frontmatter
+    folder: source/_events
+    identifier_field: title
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, widget: datetime }
+      - { name: body, widget: markdown, required: false }
+      - { name: rsvp_count, widget: number, min: 0 }
+
+  - name: talks
+    label: Talks
+    label_singular: Talk
+    create: true
+    format: frontmatter
+    folder: source/_talks
+    identifier_field: title
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: body, widget: markdown, required: false }
+
+      - label: Speakers
+        name: speakers
+        widget: relation
+        collection: speakers
+        search_fields: ["name"]
+        value_field: "name"
+        display_fields: ["name"]
+        multiple: true
+
+      - label: Events
+        name: events
+        widget: relation
+        collection: events
+        search_fields: ["title"]
+        value_field: "title"
+        display_fields: ["title"]
+        multiple: true

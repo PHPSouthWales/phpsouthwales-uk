@@ -30,7 +30,7 @@ collections:
 
   - name: events
     label: Events
-    label_singular: Events
+    label_singular: Event
     create: true
     format: frontmatter
     folder: source/_events
@@ -39,7 +39,7 @@ collections:
       - { name: title, label: Title, widget: string }
       - { name: date, label: Date, widget: datetime }
       - { name: body, widget: markdown, required: false }
-      - { name: rsvp_count, widget: number, min: 0, required: false }
+      - { name: rsvp_count, label: RSVP count, widget: number, min: 0, required: false }
 
   - name: talks
     label: Talks

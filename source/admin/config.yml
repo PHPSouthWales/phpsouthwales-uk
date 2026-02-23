@@ -1,0 +1,29 @@
+---
+local_backend:
+  allowed_hosts:
+    - localhost
+    - phpsouthwales.localhost
+  # url: http://localhost:8083/api/v1
+
+backend:
+  name: git-gateway
+
+editor:
+  preview: false
+
+show_preview_links: false
+
+media_folder: source/assets/images
+public_folder: /assets/images
+
+collections:
+  - name: speakers
+    label: Speakers
+    label_singular: Speaker
+    create: true
+    format: frontmatter
+    folder: source/_speakers
+    identifier_field: name
+    fields:
+      - { name: name, label: Name, widget: string }
+      - { name: body, widget: markdown, required: false }

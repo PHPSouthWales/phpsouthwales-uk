@@ -1,7 +1,13 @@
 ---
 sculpin_content_types:
+  events:
+    layout: base
+    permalink: /events/:basename/
   posts:
     enabled: false
   speakers:
     layout: base
     permalink: /speakers/:basename/
+  talks:
+    layout: base
+    permalink: /talks/:basename/

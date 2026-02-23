@@ -1,3 +1,6 @@
-Create Sculpin content types for events and talks
-Add remaining events
-Add remaining talks
+- Add remaining talks
+
+Done:
+
+- Create Sculpin content types for events and talks
+- Add remaining events

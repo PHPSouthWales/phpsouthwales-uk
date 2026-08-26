@@ -26,7 +26,12 @@
 
   <ul>
     {% for talk in event_talks %}
-      <li><a href="{{ talk.url|trim('/', 'right') }}">{{ talk.title }}</a></li>
+      <li>
+        <a href="{{ talk.url|trim('/', 'right') }}">{{ talk.title }}</a>
+        {%- if talk.speakers is not empty %}
+          - {{ talk.speakers|join(', ') }}
+        {%- endif %}
+      </li>
     {% endfor %}
   </ul>
 {% endif %}

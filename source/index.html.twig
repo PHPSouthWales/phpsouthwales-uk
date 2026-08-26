@@ -8,6 +8,10 @@ use: [events]
 
 <ul>
   {% for event in data.events %}
-    <li><a href="{{ event.url|trim('/', 'right') }}">{{ event.title }}</a></li>
+    <li>
+      <a href="{{ event.url|trim('/', 'right') }}">{{ event.title }}</a>
+      -
+      <time datetime="{{ event.date|date('Y-m-d') }}">{{ event.date|date('j F Y') }}</time>
+    </li>
   {% endfor %}
 </ul>

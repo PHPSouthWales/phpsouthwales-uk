@@ -21,7 +21,7 @@
 {% if event_titles is not empty %}
   <h2>{{ event_titles|length == 1 ? 'Event' : 'Events' }}</h2>
 
-  <ul>
+  <ul class="link-list">
     {% for event_title in event_titles %}
       {% set event = data.events|default([])|filter(
         event => event.title == event_title

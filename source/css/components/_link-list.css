@@ -1,0 +1,19 @@
+/*
+  A vertical list of links with optional trailing detail, used for the event,
+  talk and speaker listings.
+
+  `base/_lists.css` already strips the marker and padding from any list that
+  carries a class, so this only needs to handle spacing.
+*/
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--x-small);
+}
+
+/* Secondary detail, such as an event date or a talk's speakers. */
+.link-list__meta {
+  color: var(--color--text-muted);
+  font-size: var(--font-size--small);
+}

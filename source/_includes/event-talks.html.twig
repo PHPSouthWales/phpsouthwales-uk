@@ -24,12 +24,12 @@
 {% if event_talks is not empty %}
   <h2>Talks</h2>
 
-  <ul>
+  <ul class="link-list">
     {% for talk in event_talks %}
       <li>
         <a href="{{ talk.url|trim('/', 'right') }}">{{ talk.title }}</a>
         {%- if talk.speakers is not empty %}
-          - {{ talk.speakers|join(', ') }}
+          <span class="link-list__meta">- {{ talk.speakers|join(', ') }}</span>
         {%- endif %}
       </li>
     {% endfor %}

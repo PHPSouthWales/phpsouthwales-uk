@@ -1,5 +1,6 @@
 ---
 name: Gary Hockin
+use: [talks]
 ---
 Gary Hockin is a Senior Engineer at the BBC working on the Content Discovery team. He is a talented and evocative speaker, a cultivated author of impressively entertaining blog posts, and records elegant and informative screencasts and videos. Gary's also a contributor to the Zend Framework and is argumentative enough to be on the community review team.
 

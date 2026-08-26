@@ -1,0 +1,29 @@
+{#
+  Lists the talks given by a speaker.
+
+  Talks are joined to speakers on the speaker's name, as each talk lists its
+  speakers by name in its front matter:
+
+    speakers:
+      - Jamie Callis
+
+  Requires `use: [talks]` in the front matter of the page including this, so
+  that Sculpin makes `data.talks` available.
+
+  @var name  The speaker's name. Defaults to the current page's name.
+#}
+{% set speaker_name = name|default(page.name) %}
+
+{% set speaker_talks = data.talks|default([])|filter(
+  talk => speaker_name in talk.speakers|default([])
+) %}
+
+{% if speaker_talks is not empty %}
+  <h2>Talks</h2>
+
+  <ul>
+    {% for talk in speaker_talks %}
+      <li><a href="{{ talk.url|trim('/', 'right') }}">{{ talk.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}

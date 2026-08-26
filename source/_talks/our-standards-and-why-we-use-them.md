@@ -4,4 +4,5 @@ speakers:
   - Christopher Miller
 events:
   - (Online) Git, and Standards
+use: [speakers, events]
 ---

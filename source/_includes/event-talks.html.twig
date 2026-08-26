@@ -1,0 +1,32 @@
+{#
+  Lists the talks given at an event.
+
+  Talks are joined to events on the event's title, as each talk lists its
+  events by title in its front matter:
+
+    events:
+      - (Online) Git, and Standards
+
+  Renders nothing when an event has no talks, as many events (coding sessions,
+  Hacktoberfest evenings, and the like) legitimately have none.
+
+  Requires `use: [talks]` in the front matter of the page including this, so
+  that Sculpin makes `data.talks` available.
+
+  @var title  The event's title. Defaults to the current page's title.
+#}
+{% set event_title = title|default(page.title) %}
+
+{% set event_talks = data.talks|default([])|filter(
+  talk => event_title in talk.events|default([])
+) %}
+
+{% if event_talks is not empty %}
+  <h2>Talks</h2>
+
+  <ul>
+    {% for talk in event_talks %}
+      <li><a href="{{ talk.url|trim('/', 'right') }}">{{ talk.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}

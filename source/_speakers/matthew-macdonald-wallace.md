@@ -1,5 +1,6 @@
 ---
 name: Matthew Macdonald-Wallace
+use: [talks]
 ---
 Currently running an IoT Consultancy specialising in advising, deploying, and supporting low-cost long-range rural IoT Networks, Matt has nearly 20 years experience in the IT Industry in both the Dev and Ops fields, as well as 8 years trying to get the two sides to talk to each other under the "DevOps" approach to work.
 

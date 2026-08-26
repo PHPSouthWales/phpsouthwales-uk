@@ -1,5 +1,6 @@
 ---
 name: Rob Wilson
+use: [talks]
 ---
 A senior PHP developer with over 15 years of experience in building web based applications, having worked for multiple companies ranging from small design agencies, to large international companies such as IBM.
 

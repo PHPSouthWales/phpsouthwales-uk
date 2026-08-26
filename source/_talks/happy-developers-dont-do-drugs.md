@@ -4,4 +4,5 @@ speakers:
   - Matt Hunt
 events:
   - (Online) PHP 8, and Happy Developers
+use: [speakers, events]
 ---

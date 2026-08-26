@@ -4,6 +4,7 @@ speakers:
   - Stuart Herbert
 events:
   - Multivariate in Composer - managing multiple variants for your package
+use: [speakers, events]
 ---
 One of the key features of Composer - the PHP community's package manager - is that you can't have two different versions of a Composer package in your project at the same time. Your project - and all the packages you depend upon - must agree on which versions to install, otherwise Composer cannot continue. Anyone who has used leading packages like Guzzle or PHPUnit over the last couple of years will have seen first-hand the problems this can cause when those leading packages get new, major versions.
 

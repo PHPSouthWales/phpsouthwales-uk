@@ -1,0 +1,38 @@
+{#
+  Lists the speakers who gave a talk, linking to their speaker pages.
+
+  This is the inverse of `speaker-talks`. Speakers are joined on name, as each
+  talk lists its speakers by name in its front matter:
+
+    speakers:
+      - Rob Allen
+
+  A speaker without a matching page is still listed, just without a link, so
+  that a missing speaker file doesn't silently drop them from the talk.
+
+  Requires `use: [speakers]` in the front matter of the page including this, so
+  that Sculpin makes `data.speakers` available.
+
+  @var names  The speakers' names. Defaults to the current page's speakers.
+#}
+{% set speaker_names = names|default(page.speakers)|default([]) %}
+
+{% if speaker_names is not empty %}
+  <h2>{{ speaker_names|length == 1 ? 'Speaker' : 'Speakers' }}</h2>
+
+  <ul>
+    {% for speaker_name in speaker_names %}
+      {% set speaker = data.speakers|default([])|filter(
+        speaker => speaker.name == speaker_name
+      )|first %}
+
+      <li>
+        {%- if speaker -%}
+          <a href="{{ speaker.url|trim('/', 'right') }}">{{ speaker_name }}</a>
+        {%- else -%}
+          {{ speaker_name }}
+        {%- endif -%}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

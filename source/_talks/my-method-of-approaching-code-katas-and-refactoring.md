@@ -4,4 +4,5 @@ speakers:
   - Michael Pritchard
 events:
   - (Online) Code katas, and mob programming
+use: [speakers, events]
 ---

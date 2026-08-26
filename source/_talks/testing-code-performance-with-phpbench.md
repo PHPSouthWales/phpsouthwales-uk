@@ -4,4 +4,5 @@ speakers:
   - Dan Leech
 events:
   - (Online) Testing code performance with PHPBench
+use: [speakers, events]
 ---

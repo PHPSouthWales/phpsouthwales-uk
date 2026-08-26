@@ -1,0 +1,39 @@
+{#
+  Lists the events at which a talk was given, linking to the event pages.
+
+  This is the inverse of `event-talks`. Events are joined on title, as each
+  talk lists its events by title in its front matter:
+
+    events:
+      - (Online) Git, and Standards
+
+  An event without a matching page is still listed, just without a link, so
+  that a mistyped or renamed event title doesn't silently drop it from the
+  talk.
+
+  Requires `use: [events]` in the front matter of the page including this, so
+  that Sculpin makes `data.events` available.
+
+  @var titles  The events' titles. Defaults to the current page's events.
+#}
+{% set event_titles = titles|default(page.events)|default([]) %}
+
+{% if event_titles is not empty %}
+  <h2>{{ event_titles|length == 1 ? 'Event' : 'Events' }}</h2>
+
+  <ul>
+    {% for event_title in event_titles %}
+      {% set event = data.events|default([])|filter(
+        event => event.title == event_title
+      )|first %}
+
+      <li>
+        {%- if event -%}
+          <a href="{{ event.url|trim('/', 'right') }}">{{ event_title }}</a>
+        {%- else -%}
+          {{ event_title }}
+        {%- endif -%}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

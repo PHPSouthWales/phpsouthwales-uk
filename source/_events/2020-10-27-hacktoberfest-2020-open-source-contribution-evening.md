@@ -1,5 +1,6 @@
 ---
-title: "(Online) Hacktoberfest 2020: open source contribution evening"
+title: 'Hacktoberfest 2020: open source contribution evening'
+is_online: true
 date: 2020-10-27T19:00:00.000+00:00
 rsvp_count: 8
 use: [talks]

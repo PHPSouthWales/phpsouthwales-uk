@@ -1,5 +1,6 @@
 ---
-title: (Online) GitHub Actions for PHP
+title: GitHub Actions for PHP
+is_online: true
 date: 2020-11-26T19:00:00.000+00:00
 rsvp_count: 36
 use: [talks]

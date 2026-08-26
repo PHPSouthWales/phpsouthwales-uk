@@ -1,5 +1,6 @@
 ---
-title: (Online) PHP 8, and Happy Developers
+title: PHP 8, and Happy Developers
+is_online: true
 date: 2021-06-24T19:00:00.000+01:00
 rsvp_count: 20
 use: [talks]

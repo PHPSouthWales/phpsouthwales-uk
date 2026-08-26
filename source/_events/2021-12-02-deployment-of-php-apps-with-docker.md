@@ -1,5 +1,6 @@
 ---
-title: (Online) Deployment of PHP-Apps with Docker
+title: Deployment of PHP-Apps with Docker
+is_online: true
 date: 2021-12-02T19:00:00.000+00:00
 rsvp_count: 24
 use: [talks]

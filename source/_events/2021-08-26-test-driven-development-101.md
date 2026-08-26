@@ -1,5 +1,6 @@
 ---
-title: (Online) Test-Driven Development 101
+title: Test-Driven Development 101
+is_online: true
 date: 2021-08-26T19:00:00.000+01:00
 rsvp_count: 14
 use: [talks]

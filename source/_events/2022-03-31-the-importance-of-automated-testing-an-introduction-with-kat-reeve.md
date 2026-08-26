@@ -1,6 +1,6 @@
 ---
-title: '(Online) "The Importance of Automated Testing: an Introduction" with Kat
-  Reeve'
+title: '"The Importance of Automated Testing: an Introduction" with Kat Reeve'
+is_online: true
 date: 2022-03-31T19:00:00.000+01:00
 rsvp_count: 25
 use: [talks]

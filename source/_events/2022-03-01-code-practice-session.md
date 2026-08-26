@@ -1,5 +1,6 @@
 ---
-title: (Online) Code practice session
+title: Code practice session
+is_online: true
 date: 2022-03-01T19:00:00.000+00:00
 rsvp_count: 11
 use: [talks]

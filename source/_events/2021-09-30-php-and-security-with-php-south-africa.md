@@ -1,5 +1,6 @@
 ---
-title: (Online) PHP and security with PHP South Africa
+title: PHP and security with PHP South Africa
+is_online: true
 date: 2021-09-30T19:00:00.000+01:00
 rsvp_count: 15
 use: [talks]

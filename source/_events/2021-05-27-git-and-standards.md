@@ -1,5 +1,6 @@
 ---
-title: (Online) Git, and Standards
+title: Git, and Standards
+is_online: true
 date: 2021-05-27T19:00:00.000+01:00
 rsvp_count: 29
 use: [talks]

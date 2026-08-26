@@ -1,5 +1,6 @@
 ---
-title: (Online) Laravel Rapid and Troubleshooting Docker
+title: Laravel Rapid and Troubleshooting Docker
+is_online: true
 date: 2021-02-25T19:00:00.000+00:00
 rsvp_count: 29
 use: [talks]

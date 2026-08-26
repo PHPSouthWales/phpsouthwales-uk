@@ -1,5 +1,6 @@
 ---
-title: (Online) Code katas, and mob programming
+title: Code katas, and mob programming
+is_online: true
 date: 2021-07-29T19:00:00.000+01:00
 rsvp_count: 14
 use: [talks]

@@ -1,5 +1,6 @@
 ---
-title: (Online) Clean, concise, collaborative code with Christopher Miller
+title: Clean, concise, collaborative code with Christopher Miller
+is_online: true
 date: 2022-01-27T19:00:00.000+00:00
 rsvp_count: 21
 use: [talks]

@@ -1,5 +1,6 @@
 ---
-title: "Online Workshop: Build Your Own Parser with Mathias Verraes"
+title: Build Your Own Parser with Mathias Verraes
+is_online: true
 date: 2020-08-25T20:00:00.000+01:00
 rsvp_count: 39
 use: [talks]

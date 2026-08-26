@@ -1,5 +1,6 @@
 ---
-title: (Online) "MySQL with Bell & Musical note" with Thomas Stone
+title: '"MySQL with Bell & Musical note" with Thomas Stone'
+is_online: true
 date: 2022-02-23T19:00:00.000+00:00
 rsvp_count: 15
 use: [talks]

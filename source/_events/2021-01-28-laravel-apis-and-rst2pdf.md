@@ -1,5 +1,6 @@
 ---
-title: (Online) Laravel APIs and rst2pdf
+title: Laravel APIs and rst2pdf
+is_online: true
 date: 2021-01-28T19:00:00.000+00:00
 rsvp_count: 54
 use: [talks]

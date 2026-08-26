@@ -1,5 +1,6 @@
 ---
-title: "Online meetup: Xdebug, and Get Set Stop"
+title: Xdebug, and Get Set Stop
+is_online: true
 date: 2020-09-29T20:00:00.000+01:00
 rsvp_count: 25
 use: [talks]

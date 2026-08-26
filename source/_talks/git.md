@@ -3,6 +3,6 @@ title: Git
 speakers:
   - Sebastian Feldmann
 events:
-  - (Online) Git, and Standards
+  - Git, and Standards
 use: [speakers, events]
 ---

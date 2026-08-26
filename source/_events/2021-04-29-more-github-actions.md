@@ -1,5 +1,6 @@
 ---
-title: (Online) More GitHub Actions!
+title: More GitHub Actions!
+is_online: true
 date: 2021-04-29T19:00:00.000+01:00
 rsvp_count: 24
 use: [talks]

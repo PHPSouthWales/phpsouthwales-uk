@@ -6,14 +6,12 @@ use: [events]
 
 <h2>Events</h2>
 
-<ul class="link-list">
+<ul>
   {% for event in data.events %}
     <li>
       <a href="{{ event.url|trim('/', 'right') }}">{{ event.title }}</a>
-      <span class="link-list__meta">
-        -
-        <time datetime="{{ event.date|date('Y-m-d') }}">{{ event.date|date('j F Y') }}</time>
-      </span>
+      -
+      <time datetime="{{ event.date|date('Y-m-d') }}">{{ event.date|date('j F Y') }}</time>
     </li>
   {% endfor %}
 </ul>

@@ -21,7 +21,7 @@
 {% if speaker_talks is not empty %}
   <h2>Talks</h2>
 
-  <ul class="link-list">
+  <ul>
     {% for talk in speaker_talks %}
       <li><a href="{{ talk.url|trim('/', 'right') }}">{{ talk.title }}</a></li>
     {% endfor %}

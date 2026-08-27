@@ -1,11 +1,9 @@
-/*
-  Centres page content and caps its width.
-
-  Horizontal gutters come from the page margin on `body` in `base/_layout.css`,
-  which already widens at larger viewports, so there is no breakpoint here.
-*/
-
 .container {
-  margin-inline: auto;
+  margin: 0 auto;
   max-width: var(--container--base);
+  padding: 0 var(--space--medium);
+}
+
+@media (width >= 48rem) {
+  padding: 0 var(--space--base);
 }

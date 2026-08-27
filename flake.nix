@@ -1,5 +1,5 @@
 {
-  inputs.nixpkgs.url = "github:opdavies/nixpkgs/add-sculpin";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
   outputs =
     inputs:

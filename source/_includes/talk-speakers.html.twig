@@ -20,7 +20,7 @@
 {% if speaker_names is not empty %}
   <h2>{{ speaker_names|length == 1 ? 'Speaker' : 'Speakers' }}</h2>
 
-  <ul class="link-list">
+  <ul>
     {% for speaker_name in speaker_names %}
       {% set speaker = data.speakers|default([])|filter(
         speaker => speaker.name == speaker_name
